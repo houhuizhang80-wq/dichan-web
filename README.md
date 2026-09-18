@@ -5,6 +5,23 @@
 
 ---
 
+## 〇、在线试玩 & 仓库
+
+| | |
+|---|---|
+| **在线试玩（GitHub Pages）** | <https://houhuizhang80-wq.github.io/dichan-web/> |
+| **仓库地址** | <https://github.com/houhuizhang80-wq/dichan-web> |
+| **发布分支** | `gh-pages`（由 `npm run deploy:pages` 从 `dist/` 强制推送） |
+
+试玩站是 `dist/` 的静态产物（构建时已把 `game-src/` 一并打进 `dist/game/`），
+所以**打开即玩，不需要任何后端**；支持 PWA 安装与离线缓存。
+
+> 提示：仓库 `main` 分支按 `.gitignore` / `NOTICE.md` 的约定**不含** `game-src/`；
+> 在线试玩站因为要能跑起来，`gh-pages` 分支里是含游戏源码的。
+> 若要改成「引擎版试玩站（需自备游戏文件）」，删掉 `dist/game/` 后重新推送 `gh-pages` 即可。
+
+---
+
 ## 一、怎么跑
 
 ```bash
@@ -105,7 +122,7 @@ JS 侧只负责把声明式 UI 树渲染成 DOM。
 ```bash
 npm run dist                    # 产出纯静态 dist/（相对路径，可放子目录）
 npm run preview:dist            # 本地预览静态包
-npm run deploy:pages            # 构建并推送到 gh-pages 分支（GitHub Pages）
+npm run deploy:pages            # 构建并推送到 gh-pages 分支（GitHub Pages，远端取 origin）
 npm run shots                   # 真实浏览器逐屏截图
 npm run props                   # 核对 UI props 覆盖率（2571 处调用点）
 npm run fonts                   # 重新生成字体子集
