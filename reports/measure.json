@@ -1,0 +1,15 @@
+{
+  "total": 1,
+  "worst": [
+    {
+      "kind": "Panel",
+      "id": "",
+      "over": 106,
+      "w": 120,
+      "parentW": 398,
+      "parentOverflow": "visible",
+      "text": "法拍/二手0宗",
+      "screen": "invest"
+    }
+  ]
+}

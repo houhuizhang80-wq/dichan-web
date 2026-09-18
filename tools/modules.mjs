@@ -9,15 +9,15 @@ import { fileURLToPath } from 'node:url';
 
 export const WEB_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const LUA_ROOT = path.join(WEB_ROOT, 'lua');
-// 游戏源码目录：默认找同级目录（原作者本机布局），可用 GAME_SRC 覆盖；
-// 找不到就退回仓库内的 game-src/（外部使用者自备的位置）。
+// 游戏源码目录，按优先级查找：
+//   1) 环境变量 GAME_SRC
+//   2) 本仓库内的 game-src/（自包含布局，推荐）
+//   3) 同级目录的 ../地产风云/src（原作者本机布局，向后兼容）
 export const GAME_ROOT = (() => {
   if (process.env.GAME_SRC) return path.resolve(process.env.GAME_SRC);
-  const sibling = path.resolve(WEB_ROOT, '..', '地产风云', 'src');
-  if (fs.existsSync(path.join(sibling, 'main.lua'))) return sibling;
   const local = path.join(WEB_ROOT, 'game-src');
   if (fs.existsSync(path.join(local, 'main.lua'))) return local;
-  return sibling;
+  return path.resolve(WEB_ROOT, '..', '地产风云', 'src');
 })();
 
 function walkLua(dir, base, out) {
