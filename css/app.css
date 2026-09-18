@@ -1,0 +1,145 @@
+/* ==========================================================================
+   地产风云 · 网页移植 —— 容器与字体
+   视觉（颜色/间距/字号/边框）全部由 Lua 侧 props + UITheme 驱动，
+   这里只负责：字体栈、页面容器、竖屏手机框、滚动条等浏览器特有部分。
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   字体栈
+   NotoSansSCF  = 子集化后的 Noto Sans SC，且 700 与 400 指向同一套字形
+                  （原始包内 Bold 与 Regular 字节完全相同，忠实还原＝粗体不生效）
+   NotoSansSC   = 同一份字形，只声明 400，交给浏览器合成粗体（视觉更"像"粗体）
+   未覆盖的生僻字/emoji 由后面的系统字体兜底
+   -------------------------------------------------------------------------- */
+:root {
+  --font-sans: "NotoSansSCF", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
+    "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", system-ui, sans-serif;
+  --font-sans-synth: "NotoSansSC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
+    "Segoe UI Symbol", "Segoe UI Emoji", "Apple Color Emoji", system-ui, sans-serif;
+  --font-pixel: "FusionPixelProp", "FusionPixelMono", var(--font-sans);
+  --font-mono: "FusionPixelMono", ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --color-page: #202b36;
+}
+
+/* 合成粗体模式：?bold=synth 或手动加 class */
+html.synth-bold {
+  --font-sans: var(--font-sans-synth);
+}
+
+/* 像素字体模式：?font=pixel（用于与官方演示视频对比） */
+html.font-pixel {
+  --font-sans: var(--font-pixel);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-page);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 桌面预览：居中一个竖屏手机框；移动端全屏 */
+#stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 430px;
+  height: 100%;
+  max-height: 900px;
+  overflow: hidden;
+  background: #eef2f6;
+  position: relative;
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 520px) and (min-height: 940px) {
+  #app {
+    height: 900px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* 滚动条：引擎的 ScrollView 自带细滚动条，这里用 CSS 模拟 */
+#app *::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+#app *::-webkit-scrollbar-track {
+  background: transparent;
+}
+#app *::-webkit-scrollbar-thumb {
+  background: rgba(120, 140, 160, 0.45);
+  border-radius: 2px;
+}
+#app * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 140, 160, 0.45) transparent;
+}
+
+/* 输入框：去掉浏览器默认描边，交由主题的 border 控制 */
+#app input {
+  outline: none;
+  font-family: inherit;
+}
+
+/* 按钮：清零 UA 样式，避免污染布局 */
+#app button {
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  appearance: none;
+}
+
+#boot-status {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: rgba(28, 42, 56, 0.88);
+  color: #f8fafc;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 90vw;
+  text-align: center;
+  z-index: 9999;
+  white-space: pre-wrap;
+}
+
+/* ?audit=1 时输出的布局体检报告 */
+#audit-report {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.92);
+  color: #7cf07c;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.45;
+  padding: 6px;
+  white-space: pre;
+}

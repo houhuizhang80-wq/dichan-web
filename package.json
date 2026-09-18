@@ -1,0 +1,38 @@
+{
+  "name": "dichan-fengyun-web",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "《地产风云》TapTap SCE 微端工程的 HTML 网页移植（阶段 4：存档 / 性能 / PWA 收尾）",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "test": "node tools/headless.mjs",
+    "test:http": "node tools/http-check.mjs",
+    "test:audit": "node tools/browser-audit.mjs",
+    "test:lifecycle": "node tools/lifecycle.mjs",
+    "test:sim": "node tools/sim-baseline.mjs",
+    "test:systems": "node tools/systems.mjs",
+    "test:save": "node tools/save-test.mjs",
+    "test:browser": "node tools/browser-extra.mjs",
+    "verify": "node tools/headless.mjs && node tools/http-check.mjs && node tools/browser-audit.mjs && node tools/lifecycle.mjs && node tools/sim-baseline.mjs && node tools/systems.mjs && node tools/save-test.mjs",
+    "verify:all": "npm run verify && node tools/browser-extra.mjs",
+    "verify:ui": "node tools/headless.mjs && node tools/http-check.mjs && node tools/browser-audit.mjs",
+    "verify:game": "node tools/lifecycle.mjs && node tools/sim-baseline.mjs && node tools/systems.mjs && node tools/save-test.mjs",
+    "shots": "node tools/browser-check.mjs",
+    "snapshot": "node tools/snapshot.mjs",
+    "dist": "node tools/build-dist.mjs",
+    "deploy:pages": "node tools/deploy-pages.mjs",
+    "preview:dist": "npx --yes serve dist",
+    "probe": "node tools/ui-probe.mjs",
+    "lua": "node tools/lua.mjs",
+    "props": "python tools/audit_props.py",
+    "fonts": "python tools/build_fonts.py",
+    "fonts:check": "python tools/check_font_coverage.py",
+    "icons": "python tools/build_icons.py",
+    "frames": "python tools/extract_frames.py",
+    "sim:update": "node tools/sim-baseline.mjs --update"
+  },
+  "dependencies": {
+    "wasmoon": "^1.16.0"
+  }
+}

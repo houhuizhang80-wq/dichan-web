@@ -1,0 +1,55 @@
+/* 由 tools/build_fonts.py 自动生成，请勿手改。
+   子集字符数 7753（含 GB2312 一二级汉字 6763，覆盖玩家自由输入的中文），29.9 MB TTF -> 1764 KB WOFF2。
+   未覆盖的生僻字由字体栈后面的系统字体兜底。
+   NotoSansSC-Bold 与 Regular 在原始包内字节完全相同（MD5 一致），
+   所以默认使用 NotoSansSCF：两档字重指向同一套字形，粗体不会真的变粗——与引擎行为一致。
+   若要改用浏览器合成粗体（视觉更接近 fontWeight="bold" 的意图），
+   给 <html> 加 class="synth-bold" 即可（见 css/app.css）。*/
+
+@font-face {
+  font-family: "NotoSansSCF";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/NotoSansSC.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSansSCF";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../vendor/fonts/NotoSansSC.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSansSC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/NotoSansSC.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FusionPixelProp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/FusionPixelProp.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FusionPixelProp";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../vendor/fonts/FusionPixelPropBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "FusionPixelMono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../vendor/fonts/FusionPixelMono.woff2") format("woff2");
+}

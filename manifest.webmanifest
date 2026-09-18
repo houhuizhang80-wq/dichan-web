@@ -1,0 +1,32 @@
+{
+  "name": "地产风云 · 完全模拟现实",
+  "short_name": "地产风云",
+  "description": "硬核地产模拟经营：拿地、报建、施工、销售到交付运维的全流程",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#eef2f6",
+  "theme_color": "#26547c",
+  "icons": [
+    {
+      "src": "./vendor/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./vendor/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./vendor/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
