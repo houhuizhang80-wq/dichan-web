@@ -1,0 +1,26 @@
+{
+  "screen": "2002年3月",
+  "tick": {
+    "samples": 1200,
+    "p50": 0,
+    "p95": 0.1,
+    "p99": 0.4,
+    "max": 25.2,
+    "mean": 0.058,
+    "over16ms": 1,
+    "over33ms": 0
+  },
+  "navigate": {
+    "samples": 66,
+    "p50": 11.5,
+    "p95": 33.7,
+    "max": 42.2,
+    "slowest": [
+      "settings=42.2ms",
+      "start=34.4ms",
+      "city=29.5ms",
+      "governance=29.1ms",
+      "personal=28.4ms"
+    ]
+  }
+}

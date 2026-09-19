@@ -1,0 +1,328 @@
+[
+  {
+    "screen": "start",
+    "ok": true,
+    "nodes": 12,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "地 产 风 云",
+      "完全模拟现实",
+      "新 游 戏",
+      "游戏官方群 796029429",
+      "更新日志",
+      "v1.0  |  房地产开发商经营策略模拟"
+    ]
+  },
+  {
+    "screen": "changelog",
+    "ok": true,
+    "nodes": 156,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "← 返回",
+      "更新日志",
+      "最新版本在顶部，历史版本可点击展开",
+      "V1.5.57",
+      "最新",
+      "2026.09"
+    ]
+  },
+  {
+    "screen": "companyCreate",
+    "ok": true,
+    "nodes": 190,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "创立房地产公司",
+      "返回",
+      "兰德市",
+      "公司名称",
+      "企业类型",
+      "有限责任公司"
+    ]
+  },
+  {
+    "screen": "city",
+    "ok": true,
+    "nodes": 231,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "dashboard",
+    "ok": true,
+    "nodes": 99,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "invest",
+    "ok": true,
+    "nodes": 84,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "auction",
+    "ok": true,
+    "nodes": 47,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "project",
+    "ok": true,
+    "nodes": 48,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "sales",
+    "ok": true,
+    "nodes": 48,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "asset",
+    "ok": true,
+    "nodes": 76,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "capital",
+    "ok": true,
+    "nodes": 150,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "brand",
+    "ok": true,
+    "nodes": 96,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "personal",
+    "ok": true,
+    "nodes": 182,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "personalLife",
+    "ok": true,
+    "nodes": 125,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "personalFinance",
+    "ok": true,
+    "nodes": 122,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "governance",
+    "ok": true,
+    "nodes": 154,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "group",
+    "ok": true,
+    "nodes": 62,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "international",
+    "ok": true,
+    "nodes": 128,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "groupDiversification",
+    "ok": true,
+    "nodes": 54,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "settings",
+    "ok": true,
+    "nodes": 137,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "ledger",
+    "ok": true,
+    "nodes": 56,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "2001年01月01日",
+      "⏸",
+      "▶",
+      "▶▶",
+      "▶▶▶",
+      "下月 ▸"
+    ]
+  },
+  {
+    "screen": "inheritance",
+    "ok": true,
+    "nodes": 4,
+    "error": null,
+    "logs": [],
+    "preview": [
+      "当前没有待处理的继承事项",
+      "返回总览"
+    ]
+  }
+]

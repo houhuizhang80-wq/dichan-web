@@ -1,0 +1,14 @@
+{
+  "supported": true,
+  "secure": true,
+  "scope": "http://127.0.0.1:5176/",
+  "active": true,
+  "controller": false,
+  "caches": [
+    "dichan-v1"
+  ],
+  "cachedCount": 80,
+  "hasWasm": true,
+  "hasFont": true,
+  "hasLua": true
+}

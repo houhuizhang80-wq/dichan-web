@@ -1,0 +1,20 @@
+node_modules/
+
+# 构建/测试产物（本地生成，不进仓库）
+.out/
+.saves/
+dist/
+edge-profile*/
+*.log
+
+# 由游戏源码派生的中间产物（可重新生成）
+tools/props_report.json
+vendor/fonts/_charset.txt
+
+# 自备的游戏源码（不属于本仓库）
+game-src/
+
+# 本机环境文件
+.env
+.DS_Store
+Thumbs.db
