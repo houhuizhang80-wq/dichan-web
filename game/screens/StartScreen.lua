@@ -145,15 +145,6 @@ function M.Create(navigate)
                 children = buttons,
             },
 
-            -- 游戏官方群
-            UI.Label {
-                text = "游戏官方群 1107570877",
-                fontSize = T.FontCaption,
-                fontColor = T.TextSecondary,
-                textAlign = "center",
-                marginTop = 18,
-            },
-
             -- 底部区域：更新日志按钮 + 版本信息
             UI.Panel {
                 alignItems = "center",
