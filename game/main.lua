@@ -122,7 +122,7 @@ local activeCompanyScreens_ = {
 -- 生命周期
 -- ============================================================================
 function Start()
-    graphics.windowTitle = "地产风云：完全模拟现实"
+    graphics.windowTitle = "地产模拟"
 
     -- ===== 性能优化: 配置GC为增量模式，避免长期运行内存堆积 =====
     -- 不再 stop 自动GC；自动增量GC + 每帧小步进更稳定，避免旧UI树/临时表长期滞留。
